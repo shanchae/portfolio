@@ -11,7 +11,7 @@ function ContactMe() {
     const displayAlert = () => {
         const timer = setTimeout(() => {
             setIsSumbitted(false)
-        }, 5000)
+        }, 10000)
 
         return () => clearTimeout(timer)
     }
@@ -22,8 +22,10 @@ function ContactMe() {
         if (senderEmail && senderName && senderMessage){
             send('service_k7et1g4', 'template_ckszepg', { senderName, senderEmail, senderMessage}, 'jmha3vZgL_DIQwWF7')
               .then((result) => {
+                  console.log(result.text)
                   setResult('Sent successfully! Thank you for reaching out! (❁´◡`❁)');
               }, (error) => {
+                  console.log(error)
                   setResult('Something went wrong! Please try again later. (⊙_⊙;)');
               })
         } else {
@@ -42,7 +44,7 @@ function ContactMe() {
 
   return (
     <div className='relative overflow-hidden w-full bg-zinc-700 h-screen'>
-        <div className={`absolute ${isSubmitted ? "right-10" : "-right-full"} w-82 top-10 transition-all duration-500 ease-in-out bg-fuchsia-700 p-3`}>
+        <div className={`absolute ${isSubmitted ? "right-10" : "-right-full"} w-fit top-10 transition-all duration-500 ease-in-out bg-fuchsia-700 p-3`}>
             <div className='text-2xl text-white text-center'>{result}</div>
         </div>
         <div className='w-10/12 md:8/12 h-full mx-auto flex flex-col-reverse md:flex-row gap-20 justify-center items-center'>
