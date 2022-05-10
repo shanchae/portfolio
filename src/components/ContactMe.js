@@ -22,9 +22,9 @@ function ContactMe() {
         if (senderEmail && senderName && senderMessage){
             send('service_k7et1g4', 'template_ckszepg', { senderName, senderEmail, senderMessage}, 'jmha3vZgL_DIQwWF7')
               .then((result) => {
-                  setResult(result.text);
+                  setResult('Sent successfully! Thank you for reaching out! (❁´◡`❁)');
               }, (error) => {
-                  setResult(error.text);
+                  setResult('Something went wrong! Please try again later. (⊙_⊙;)');
               })
         } else {
             setResult("Please enter values in the form")
