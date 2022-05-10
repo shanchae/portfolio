@@ -42,28 +42,29 @@ function ContactMe() {
 
   return (
     <div className='relative overflow-hidden w-full bg-zinc-700 h-screen'>
-        <div className={`absolute ${isSubmitted ? "right-10" : "-right-full"} w-82 top-10 transition-all duration-500 ease-in-out bg-black p-3`}>
+        <div className={`absolute ${isSubmitted ? "right-10" : "-right-full"} w-82 top-10 transition-all duration-500 ease-in-out bg-fuchsia-700 p-3`}>
             <div className='text-2xl text-white text-center'>{result}</div>
         </div>
         <div className='w-10/12 md:8/12 h-full mx-auto flex flex-col-reverse md:flex-row gap-20 justify-center items-center'>
-            <div className='w-10/12 md:w-5/12 border-2 border-cyan-600 rounded-md p-4 text-zinc-200'>
-                <form onSubmit={sendEmail} className='flex flex-col space-y-8 text-xl'>
+            <div className='w-10/12 md:w-5/12 border-4 border-fuchsia-700 bg-fuchsia-300 text-zinc-700'>
+                <div className='bg-fuchsia-700 text-fuchsia-200 text-3xl text-center p-1'>HELLO ╰(*°▽°*)╯</div>
+                <form onSubmit={sendEmail} className='flex flex-col space-y-8 text-xl p-4'>
                     <div className='flex flex-col gap-2'>
                         Your Name
-                        <input required className='w-2/3 bg-transparent border-b border-cyan-600 outline-none' type="text" name="senderName" value={senderName} onChange={(e) => setSenderName(e.target.value)} id=""/>
+                        <input required className='w-2/3 bg-transparent border-b border-fuchsia-700 outline-none' type="text" name="senderName" value={senderName} onChange={(e) => setSenderName(e.target.value)} id=""/>
                     </div>
                     <div className='flex flex-col gap-2'>
                         Your Email
-                        <input required className='w-2/3 bg-transparent border-b border-cyan-600 outline-none' type="text" name="senderEmail" value={senderEmail} onChange={(e) => setSenderEmail(e.target.value)} id="" />
+                        <input required className='w-2/3 bg-transparent border-b border-fuchsia-700 outline-none' type="text" name="senderEmail" value={senderEmail} onChange={(e) => setSenderEmail(e.target.value)} id="" />
                     </div>
                     <div className='flex flex-col gap-2'>
                         Message:
-                        <textarea required className='bg-transparent border-b border-cyan-600 outline-none' name="senderMessage" value={senderMessage} onChange={(e) => setSenderMessage(e.target.value)} id="" />
+                        <textarea required className='bg-transparent border-b border-fuchsia-700 outline-none' name="senderMessage" value={senderMessage} onChange={(e) => setSenderMessage(e.target.value)} id="" />
                     </div>
-                    <button className='w-fit mx-auto px-3 py-1 bg-cyan-600' onClick={sendEmail}>Submit</button>
+                    <button className='w-fit mx-auto px-3 py-1 bg-fuchsia-700 text-fuchsia-200 hover:bg-fuchsia-600 transition-colors duration-300 ease-in-out' onClick={sendEmail}>Submit</button>
                 </form>
             </div>
-            <div className='flex justify-center text-cyan-600 text-5xl'>
+            <div className='flex justify-center text-fuchsia-600 text-5xl'>
                 Contact Me
             </div>
         </div>
