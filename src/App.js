@@ -52,7 +52,7 @@ function App() {
   }
 
   return (
-    <div className="w-full h-full  relative font-vt323">
+    <div className="w-full h-full relative font-vt323">
       <Header
         onScroll={onScroll}
       />

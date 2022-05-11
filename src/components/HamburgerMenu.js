@@ -12,7 +12,7 @@ function HamburgerMenu({scroll}) {
             onClick={() => setIsOpen(!isOpen)}    
         />
 
-        <nav className='w-40 h-screen bg-fuchsia-700 px-4'>
+        <nav className='w-40 h-screen bg-fuchsia-600 px-4'>
                 <ul className='flex flex-col text-gray-200 pt-10'>
                     <li className='navBtn border-b' id='about-me' onClick={scroll}>ABOUT ME</li>
                     <li className='navBtn border-b'id='skills' onClick={scroll}>SKILLS</li>

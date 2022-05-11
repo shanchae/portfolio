@@ -15,7 +15,7 @@ export const works = [
     {
         id: 2,
         appName: 'Ecommerce Site',
-        description: 'Fashionista is an online site built using Next.js and tailwindcss. It uses Firebase operations like firestore and authentication.',
+        description: 'Fashionista is an online store built using Next.js and tailwindcss. It uses Firebase operations like firestore and authentication.',
         imgURL: ecommerce,
         code: 'https://github.com/shanchae/ecommerce-next',
         vercel: 'https://ecommerce-next-iota.vercel.app/'
