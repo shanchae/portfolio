@@ -15,7 +15,7 @@ function Work({ work }) {
   const [ isHovering, setIsHovering ] = useState(false)
 
   return (
-    <div className={`relative h-full text-fuchsia-100 transition-all duration-300 ${isClose ? "bg-transparent" : "bg-fuchsia-200"}`}>
+    <div className={`relative h-full text-fuchsia-100 transition-all duration-300 ${isClose ? "bg-transparent" : "bg-zinc-200"}`}>
       <div className={`absolute w-full h-full flex flex-col space-y-2 justify-center items-center z-10 ${isClose ? "block" : "hidden"}`}
       >
         <FaFileCode
