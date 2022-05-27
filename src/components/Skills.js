@@ -19,7 +19,7 @@ import {
 function Skills() {
     return (   
         <div className='w-10/12 h-screen md:w-8/12 mx-auto  grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center'>
-            <div className='flex justify-center text-fuchsia-600 text-4xl'>SKILLS</div>
+            <div className='flex justify-center text-fuchsia-600 text-5xl'>SKILLS</div>
             <ul className='text-zinc-200 grid grid-cols-3 lg:grid-cols-5 gap-6'>
                 <li className='skills'><SiHtml5 className='text-5xl pb-2'/>HTML5</li>
                 <li className='skills'><SiCss3 className='text-5xl pb-2'/>CSS3</li>
