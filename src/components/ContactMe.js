@@ -47,10 +47,10 @@ function ContactMe() {
         <div className={`absolute ${isSubmitted ? "right-10" : "-right-full"} w-fit top-10 transition-all duration-500 ease-in-out bg-fuchsia-700 p-3`}>
             <div className='text-2xl text-white text-center'>{result}</div>
         </div>
-        <div className='w-10/12 md:8/12 h-full mx-auto flex flex-col-reverse md:flex-row gap-20 justify-center items-center'>
-            <div className='w-10/12 md:w-5/12 border-4 border-fuchsia-700 bg-fuchsia-300 text-zinc-700'>
-                <div className='bg-fuchsia-700 text-fuchsia-200 text-3xl text-center p-1'>HELLO ╰(*°▽°*)╯</div>
-                <form onSubmit={sendEmail} className='flex flex-col space-y-8 text-xl p-4'>
+        <div className='w-10/12 md:8/12 h-screen mx-auto flex flex-col-reverse md:flex-row gap-20 justify-center items-center'>
+            <div className='w-8/12 md:w-5/12 border-4 border-fuchsia-700 bg-fuchsia-300 text-zinc-700'>
+                <div className='bg-fuchsia-700 text-fuchsia-200 text-lg text-center p-1'>HELLO ╰(*°▽°*)╯</div>
+                <form onSubmit={sendEmail} className='flex flex-col space-y-8 text-lg p-4'>
                     <div className='flex flex-col gap-2'>
                         Your Name
                         <input required className='w-2/3 bg-transparent border-b border-fuchsia-700 outline-none' type="text" name="senderName" value={senderName} onChange={(e) => setSenderName(e.target.value)} id=""/>
@@ -66,7 +66,7 @@ function ContactMe() {
                     <button className='w-fit mx-auto px-3 py-1 bg-fuchsia-700 text-fuchsia-200 hover:bg-fuchsia-600 transition-colors duration-300 ease-in-out' onClick={sendEmail}>Submit</button>
                 </form>
             </div>
-            <div className='flex justify-center text-fuchsia-600 text-5xl'>
+            <div className='flex justify-center text-fuchsia-600 text-4xl'>
                 Contact Me
             </div>
         </div>
