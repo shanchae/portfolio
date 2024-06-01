@@ -2,6 +2,7 @@ import  recipe  from './works_imgs/recipe.png'
 import  ecommerce  from './works_imgs/ecommerce.png'
 import  blog  from './works_imgs/blog.png'
 import  booking  from './works_imgs/booking.png'
+import sistem from './works_imgs/sistem.png'
 
 export const works = [
   {
@@ -45,7 +46,7 @@ export const works = [
     appName: "SISTEM",
     description:
       "SISTEM is a MERN web-based system created for the use of the Department of Computer, Information Sciences and Mathematics of the University of San Carlos. It is a student information system that generates study plans for the students based on their grades. It also has ticket managment for handling concerns of the students.",
-    imgURL: blog,
+    imgURL: sistem,
     code: "#",
     vercel: "https://www.project-sistem.pro/",
   },
