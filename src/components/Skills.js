@@ -12,7 +12,6 @@ import {
     SiCss3,
     SiJavascript,
     SiTailwindcss,
-    SiStyledcomponents,
     SiSass,
     SiMui,
     SiNodedotjs,
